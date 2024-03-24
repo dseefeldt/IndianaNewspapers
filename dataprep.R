@@ -1,7 +1,7 @@
 library(tidyverse)
 
 metadata <- read.csv(file = "IndianaNewspapersMasterMetadata.csv", header = TRUE)
-metadata <- metadata %>% filter(Transcript == TRUE)
+#metadata <- metadata %>% filter(Transcript == TRUE)
 
 txt <- list.files(path = "txt/")
 txt <- as.data.frame(txt)
